@@ -18,7 +18,7 @@ pipeline {
         }
     }
     post {
-        always {
+        success {
             archiveArtifacts artifacts: '**/movie-analyst-ui-*.tgz', fingerprint: true
         }
     }
